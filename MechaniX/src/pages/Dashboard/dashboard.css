@@ -1,0 +1,5 @@
+.dashboard{
+    background-color: blueviolet;
+    height: calc(100vh - 10rem);
+    width:100%;
+}

@@ -51,7 +51,7 @@ export const Login = (props) => {
   return (
     <section className="hero-section">
       <div className="login-container">
-        <h5>Login</h5>
+      <div className="title">vLoginv</div>
         <form action="" onSubmit={ login } className="logform" method="POST">
           <div className="inputbox">
             <label htmlFor="veh_regNo" className="label-log">

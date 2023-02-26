@@ -67,7 +67,7 @@ function Register() {
 
   return (
     <section className="hero-section">
-      <div className="container">
+      <div className="register-container">
         <div className="title">Registration</div>
         <form action="#" onSubmit={handlesubmit}>
           <div className="user__details">
