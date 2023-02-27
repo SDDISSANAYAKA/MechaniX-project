@@ -9,7 +9,7 @@ import "../CenterPane/CenterPane.css";
 function Card1() {
   return (
     <div id="small2">
-      <h1>Background Color</h1>
+      <h1>Admin Page</h1>
       <Card bg="primary" text="white" style={{ width: "18rem" }}>
         <Card.Header>Header</Card.Header>
         <Card.Body>
@@ -30,7 +30,7 @@ function Card1() {
 
 
 <Card bg="success" text="white" style={{ width: "18rem" }}>
-<Card.Header>Header</Card.Header>
+<Card.Header>jjjjj</Card.Header>
 <Card.Body>
   <Card.Title>Secondary Card Title</Card.Title>
   <Card.Text>

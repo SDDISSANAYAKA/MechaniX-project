@@ -11,9 +11,14 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import AdminDash from "./pages/AdminDash/AdminDash";
 import MechanicDash from "./pages/MechanicDash/MechanicDash";
+import { useState } from "react";
+import { UserContext } from "./helper/context";
 
 function App() {
+  const [user, setUser]= useState({})
+
   return (
+    <UserContext.Provider value={{user, setUser}}>
     <div className="App">
       <Navbar />
       <Routes>
@@ -29,6 +34,7 @@ function App() {
         <Route path="/MechanicDash" element={<MechanicDash />} />
       </Routes>
     </div>
+    </UserContext.Provider>
   );
 }
 

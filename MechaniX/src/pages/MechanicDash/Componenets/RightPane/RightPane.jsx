@@ -29,9 +29,6 @@ export default function RightPane() {
                           <h1> Test</h1>
                 </Box>
               
-    <Box>
-      <ChatbotApp/>
-    </Box>
 
       </div>
   )

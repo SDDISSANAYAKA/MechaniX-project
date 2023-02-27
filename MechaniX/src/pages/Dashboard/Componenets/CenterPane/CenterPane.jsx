@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import './CenterPane.css'
 import Box from '@mui/material/Box';
 import Card1 from '../Cards/Card1';
+import Card3 from '../Cards/Card3';
+import { UserContext } from '../../../../helper/context';
 
 
 
 
 export default function CenterPaneBox() {
+  const {user,setUser} = useContext(UserContext);
+  useEffect(()=>{
+    console.log(user,"######");
+  },[user])
     return (
     <div className = "CenterPaneBox">
 
@@ -20,7 +26,7 @@ export default function CenterPaneBox() {
           <div className="cardrow">
         
             <Box>
-               <Card1/>
+               <Card1 name={user.name} email={user.email} phone={user.phone} address={user.address} />
                  <br />
                 <hr />
                  <br />

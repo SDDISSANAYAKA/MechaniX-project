@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { UserContext } from "../helper/context";
 
 
  const api = axios.create({
@@ -13,6 +14,7 @@ export const Login = (props) => {
   const [veh_regNo, setveh_regNo] = useState("");
   const [password, setpassword] = useState("");
   const [newVehicle, setNewVehicle] = useState([]);
+  const {user, setUser} = useContext(UserContext);
 
   console.log(veh_regNo);
   console.log(password);
@@ -40,10 +42,13 @@ export const Login = (props) => {
           console.log(res.data.Usertype);
           if(res.data.Usertype=="User"){
             navigate("/dashboard")
+            setUser(res.data)
           }else if(res.data.Usertype=="admin"){
             navigate("/AdminDash")
+            setUser(res.data)
           }else if(res.data.Usertype=="Mechanic"){
             navigate("/MechanicDash")
+            setUser(res.data)
           }else{
             console.log("Login faild", res.data);
           }

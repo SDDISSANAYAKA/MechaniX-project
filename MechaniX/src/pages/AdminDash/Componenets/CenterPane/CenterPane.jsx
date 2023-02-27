@@ -7,6 +7,7 @@ import Card1 from '../Cards/Card1';
 
 
 export default function CenterPaneBox() {
+  
     return (
     <div className = "CenterPaneBox">
 
