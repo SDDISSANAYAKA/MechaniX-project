@@ -81,11 +81,12 @@ li {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
-h3 {
-  font-size: 8rem;
-  text-align: center;
+.login-title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  align-items: center;
   color: #fff;
-  padding: 12px;
 }
 .logform {
   width: 300px;

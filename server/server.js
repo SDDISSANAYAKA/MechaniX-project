@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 app.post('/login', async(req, res) => {
     let data = req.body;
 
-    const user =  await User.findOne({"vehNum":data.vehNum , "password":data.password })
+    const user =  await User.findOne({"VehicleNo":data.vehNum , "password":data.password })
 
     console.log(user);
     res.send(user)
@@ -38,12 +38,10 @@ app.post('/login', async(req, res) => {
 
 
 
-
-
 app.post('/register', (req, res) => {
   let data = req.body;
   console.log(data);
-  User.create({ "VehicleNo":data.VehicleNo, "email":data.email, "password":data.password, "confirmedpassword":data.confirmedpassword, "name":data.name, "phone":data.phone, "address":data.address })
+  User.create({ "Usertype":"User" , "VehicleNo":data.VehicleNo, "email":data.email, "password":data.password, "confirmedpassword":data.confirmedpassword, "name":data.name, "phone":data.phone, "address":data.address })
   Vehicle.create({ "VehicleNo":data.VehicleNo, "Vehicletype":data.Vehicletype, "VehicleModel":data.VehicleModel, "VehicleMade":data.VehicleMade, "Madeyear":data.Madeyear, "fueltype":data.fueltype })
 
 

@@ -36,12 +36,17 @@ export const Login = (props) => {
         password: password
     }
     api.post("/login", userObject).then((res)=>{
-        console.log(res);
         if(res.data != ""){
-          console.log(res.data);
-          navigate("/dashboard")
-        }else{
-          console.log("Login faild", res.data);
+          console.log(res.data.Usertype);
+          if(res.data.Usertype=="User"){
+            navigate("/dashboard")
+          }else if(res.data.Usertype=="admin"){
+            navigate("/AdminDash")
+          }else if(res.data.Usertype=="Mechanic"){
+            navigate("/MechanicDash")
+          }else{
+            console.log("Login faild", res.data);
+          }
         }
     }).catch((e)=>{
         console.log(e);
@@ -51,7 +56,7 @@ export const Login = (props) => {
   return (
     <section className="hero-section">
       <div className="login-container">
-      <div className="title">vLoginv</div>
+      <div className="login-title"> Login </div>
         <form action="" onSubmit={ login } className="logform" method="POST">
           <div className="inputbox">
             <label htmlFor="veh_regNo" className="label-log">

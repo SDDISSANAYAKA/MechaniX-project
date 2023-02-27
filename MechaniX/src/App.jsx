@@ -9,6 +9,8 @@ import "./App.css";
 import Login from "./components/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import AdminDash from "./pages/AdminDash/AdminDash";
+import MechanicDash from "./pages/MechanicDash/MechanicDash";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/AdminDash" element={<AdminDash />} />
+        <Route path="/MechanicDash" element={<MechanicDash />} />
       </Routes>
     </div>
   );

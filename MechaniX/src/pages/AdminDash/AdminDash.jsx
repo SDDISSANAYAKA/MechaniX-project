@@ -2,13 +2,13 @@ import React from 'react'
 import Header from './Componenets/LeftPane/Header'
 import CenterPane from './Componenets/CenterPane/CenterPane'
 import RightPane from './Componenets/RightPane/RightPane'
-import './dashboard.css' 
+import './admindash.css' 
 import Home from './Pages/Home/Home'
 
-function Dashboard() {
+function AdminDash() {
   return (
-    <div className='dashboard'> <Home/> </div> 
+    <div className='dashboard'> <Home /> </div> 
   )
 }
 
-export default Dashboard
+export default AdminDash

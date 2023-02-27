@@ -1,0 +1,59 @@
+.CardPanel {
+    font-family: sans-serif;
+    text-align: center;
+    
+  }
+  
+  /*small2 {
+    width: 60%;
+    margin: auto;
+    display: flex;
+  }*/
+
+.CardTest{
+    margin: 10px;
+    padding: 10px;
+  display: flex;
+}
+
+.cardrow{
+    margin: 5px;
+    padding: 5px;
+}
+
+.CenterPane{
+    flex: 3;
+    padding-left: 50px;
+}
+.CenterPaneBox{
+    padding-left: 200px;
+    flex: 6;
+}
+
+.CenterPaneHeader{
+    padding-top: 50px;
+    padding-left: 200px;
+    
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.CenterBox{
+    padding-top: 50px;
+    margin: 20px;
+    align-items: center;
+}
+
+.WelcomeText{
+    align-items: center;
+    font-size: 50px;
+    color: red;
+}
+
+.CenterItems{
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.CenterMenuList{
+    padding-top: 10px;
+}
