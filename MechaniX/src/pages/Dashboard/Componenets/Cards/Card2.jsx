@@ -4,6 +4,7 @@ import { Card, ListGroup, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "../CenterPane/CenterPane.css";
 import { CardHeader } from "@mui/material";
+import { alignPropType } from "react-bootstrap/esm/types";
 
 function Card2(props) {
   return (
@@ -11,8 +12,8 @@ function Card2(props) {
       <h1>Vehicle Process</h1>
       <Card className="card2">
         <Card.Body>
-          <Card.Title >Card Title</Card.Title>
-          <Card.Text>
+          <Card.Title >  </Card.Title>
+          <Card.Text style={{textAlign:"left"}} >
             <ul>
               <li>{props.Vehicletype}</li>
               <li>{props.VehicleModel}</li>

@@ -28,7 +28,7 @@ export default function CenterPaneBox() {
             <Box>
                <Card1 name={user.user.name} email={user.user.email} phone={user.user.phone} address={user.user.address} />
                  <br />
-                <hr />
+                 <hr />
                  <br />
             </Box>
         
