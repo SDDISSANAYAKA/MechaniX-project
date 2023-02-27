@@ -16,6 +16,7 @@ export const Login = (props) => {
   const [newVehicle, setNewVehicle] = useState([]);
   const {user, setUser} = useContext(UserContext);
 
+
   console.log(veh_regNo);
   console.log(password);
   
@@ -39,14 +40,14 @@ export const Login = (props) => {
     }
     api.post("/login", userObject).then((res)=>{
         if(res.data != ""){
-          console.log(res.data.Usertype);
-          if(res.data.Usertype=="User"){
+          console.log(res.data.user.Usertype);
+          if(res.data.user.Usertype=="User"){
             navigate("/dashboard")
             setUser(res.data)
-          }else if(res.data.Usertype=="admin"){
+          }else if(res.data.user.Usertype=="admin"){
             navigate("/AdminDash")
             setUser(res.data)
-          }else if(res.data.Usertype=="Mechanic"){
+          }else if(res.data.user.Usertype=="Mechanic"){
             navigate("/MechanicDash")
             setUser(res.data)
           }else{

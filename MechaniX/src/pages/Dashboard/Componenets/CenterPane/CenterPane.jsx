@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import './CenterPane.css'
 import Box from '@mui/material/Box';
 import Card1 from '../Cards/Card1';
-import Card3 from '../Cards/Card3';
+import Card2 from '../Cards/Card2';
 import { UserContext } from '../../../../helper/context';
 
 
@@ -26,7 +26,7 @@ export default function CenterPaneBox() {
           <div className="cardrow">
         
             <Box>
-               <Card1 name={user.name} email={user.email} phone={user.phone} address={user.address} />
+               <Card1 name={user.user.name} email={user.user.email} phone={user.user.phone} address={user.user.address} />
                  <br />
                 <hr />
                  <br />
@@ -35,8 +35,8 @@ export default function CenterPaneBox() {
            </div>
 
            <div className="cardrow">
-             <Box>
-               <Card1 />
+           <Box>
+               <Card2 Vehicletype={user.vehicle.Vehicletype} VehicleModel={user.vehicle.VehicleModel} VehicleMade={user.vehicle.VehicleMade} Madeyear={user.vehicle. Madeyear} fueltype={user.vehicle.fueltype} />
                 <br />
                 <hr />
                 <br />

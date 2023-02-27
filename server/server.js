@@ -26,9 +26,10 @@ app.post('/login', async(req, res) => {
     let data = req.body;
 
     const user =  await User.findOne({"VehicleNo":data.vehNum , "password":data.password })
+    const vehicle = await Vehicle.findOne({"VehicleNo":data.vehNum })
 
-    console.log(user);
-    res.send(user)
+    console.log(user,vehicle);
+    res.send({user:user,vehicle:vehicle})
     // if(req.body.vehNum == "ABC-1234" && req.body.password == "abc1234"){
     //   res.send("user login")
     // }else{
