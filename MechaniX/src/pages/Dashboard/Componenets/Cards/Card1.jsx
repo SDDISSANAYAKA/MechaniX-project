@@ -26,26 +26,7 @@ function Card1(props) {
           </Card.Text>
         </Card.Body>
       </Card>
-      <br/>
-      <br/>
-      <hr/>
-      <br/>
-      <br/>
-    
-    
-
-
-
-<br />
-<br/>
-<hr/>
-<br/>
-<br/>
-
-
-
-
-
+      
 </div>
   )
 };
