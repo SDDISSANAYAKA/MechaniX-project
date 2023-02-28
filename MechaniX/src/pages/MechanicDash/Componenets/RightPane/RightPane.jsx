@@ -26,7 +26,19 @@ export default function RightPane() {
                     opacity: [0.9, 0.8, 0.7],
                      },
                               }} >
-                          <h1> Test</h1>
+                          <h1> Today Appointments </h1> 
+                          <br/>
+
+                          <h2> Vehicle Number:
+                                <br/><br/>
+                                Appointment type: 
+                                <br/><br/>
+                                Owner name: 
+                                <br/><br/>
+                                Date
+                                <br/><br/>
+                                Time
+                                <br/>   </h2>
                 </Box>
               
 

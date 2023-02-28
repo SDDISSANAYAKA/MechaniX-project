@@ -1,51 +1,64 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import './CenterPane.css'
 import Box from '@mui/material/Box';
 import Card1 from '../Cards/Card1';
+import Card2 from '../Cards/Card2';
+import Card3 from '../Cards/Card3';
+import CardDash from '../Cards/CardDash';
+import Appointment from '../Cards/Appointment';
+import { UserContext } from "../../../../helper/context";
+
+
 
 
 
 
 export default function CenterPaneBox() {
-    return (
-    <div className = "CenterPaneBox">
-
+  const { user, setUser } = useContext(UserContext);
+  useEffect(() => {
+    console.log(user, "######!!!!");
+  }, [user]);
+  return (
+    <div className="CenterPaneBox">
       <div className="CardPanel">
-      <div className="CardTest">
-      <br />
-      <hr />
-      <br />
-      <br />
-      
+        <div className="CardTest">
           <div className="cardrow">
-        
             <Box>
-               <Card1/>
-                 <br />
-                <hr />
-                 <br />
-            </Box>
-        
-           </div>
+              <Card1
+                 name = {user.user?.name}
+                 email={user.user?.email}
+                 phone={user.user?.phone}
+                 address={user.user?.address}
 
-           <div className="cardrow">
-             <Box>
-               <Card1 />
-                <br />
-                <hr />
-                <br />
-              </Box>
-            </div>
-            
-            
-      
-       </div>
-     </div>
-      
+              />
+            </Box>
+          </div>
+        </div>
+        <div className="cardrow">
+            <Box>
+              <CardDash
+                // Vehicletype={user.vehicle.Vehicletype}
+                // VehicleModel={user.vehicle.VehicleModel}
+                // VehicleMade={user.vehicle.VehicleMade}
+                // Madeyear={user.vehicle.Madeyear}
+                // fueltype={user.vehicle.fueltype}
+              />
+            </Box>
+          </div>
+        <div className="displayBox">
+            <Appointment/> 
+            <br/>
+            <br/> 
+            <br/> 
+            <Card3/>
+            <br/>
+            <br/> 
+            <br/> 
+            <Card3/>
+        </div>
+      </div>
     </div>
-        
-    
-  )
+  );
 }
 /*
 <div className="CenterBox">

@@ -6,60 +6,27 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../CenterPane/CenterPane.css";
 
 
-function Card1() {
+function Card1(props) {
+
+
   return (
     <div id="small2">
-      <h1>Background Color</h1>
-      <Card bg="primary" text="white" style={{ width: "18rem" }}>
-        <Card.Header>Header</Card.Header>
+      <h1 style={{alignContent:"center"}}>Welcome {props.name} ! </h1>
+      <Card bg="primary" text="white" style={{ width: "100rem" ,fontSize:"16px" }}>
+        <Card.Header>{props.name}</Card.Header>
         <Card.Body>
-          <Card.Title>Primary Card Title</Card.Title>
+          <Card.Title>User Details </Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            <ul>
+              <li>{props.email}</li>
+              <li>{props.phone}</li>
+              <li>{props.address}</li>
+              
+            </ul>
           </Card.Text>
         </Card.Body>
       </Card>
-      <br/>
-      <br/>
-      <hr/>
-      <br/>
-      <br/>
-    
-    
-
-
-<Card bg="success" text="white" style={{ width: "18rem" }}>
-<Card.Header>Header</Card.Header>
-<Card.Body>
-  <Card.Title>Secondary Card Title</Card.Title>
-  <Card.Text>
-    Some quick example text to build on the card title and make up the
-    bulk of the card's content.
-  </Card.Text>
-</Card.Body>
-</Card>
-<br />
-<br/>
-<hr/>
-<br/>
-<br/>
-
-
-
-<Card bg="secondary" text="white" style={{ width: "18rem" }}>
-<Card.Header>Header</Card.Header>
-<Card.Body>
-  <Card.Title>Secondary Card Title</Card.Title>
-  <Card.Text>
-    Some quick example text to build on the card title and make up the
-    bulk of the card's content.
-  </Card.Text>
-</Card.Body>
-</Card>
-<br />
-
-
+      
 </div>
   )
 };

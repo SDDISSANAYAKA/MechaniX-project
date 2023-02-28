@@ -5,15 +5,15 @@ import { Card, ListGroup } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "../CenterPane/CenterPane.css";
 
-function Card3() {
+function Appointment() {
   return (
     <div id="small2">
-      <h1 style={{textAlign:"left" ,paddingLeft:"30px"}}> Card3 </h1>
+      <h1 style={{textAlign:"left" ,paddingLeft:"30px"}}> Appointment </h1>
       <br/>
       <Card bg="primary" text="white" style={{ width: "28rem" , height:"20rem" ,margin:"2rem", textAlign:"left" , padding:"1rem" }}>
-        <Card.Header style={{textAlign:"center"}}>Appointment Details</Card.Header>
+        <Card.Header  style={{textAlign:"center"}} >Upcoming Appointments</Card.Header>
         <Card.Body style={{}}>
-          <Card.Title>Upcoming Appointments</Card.Title>
+          <Card.Title> Loding Bay 01 </Card.Title>
           <Card.Text>
             
             Vehicle Number:
@@ -120,4 +120,4 @@ function Card3() {
   );
 }
 
-export default Card3;
+export default Appointment;

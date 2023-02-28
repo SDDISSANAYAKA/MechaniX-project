@@ -9,23 +9,27 @@ import { alignPropType } from "react-bootstrap/esm/types";
 function CardDash(props) {
   return (
     <div id="small2">
-      <h1> Currunt Status of your Vehicle </h1>
+      <h1> On Going jobs </h1>
       <Card className="card2">
         <Card.Body>
           <Card.Title >  </Card.Title>
           <Card.Text style={{textAlign:"left" , backgroundColor:"lightblue" , padding:"5rem", fontSize:"16px"}} >
 
-            Current Status : 
+            Mechanical history : 
             <br/>
             Vehicle Number: {props.VehicleModel}
             <br/>
             Vehicle Owner: {props.fueltype}
             <br/>
-            Mechanic:
+            Repair Date:
             <br/>
-            Parts of Used:
-          </Card.Text>
+            Repair Details:
+            <br/>
+            Used parts:
+            <br/>
+            Loading Bay: 
 
+          </Card.Text>
         </Card.Body>
       </Card>
     </div>
