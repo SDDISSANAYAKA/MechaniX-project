@@ -107,6 +107,26 @@ li {
 }
 /* work End */
 
+/* Garage */
+.hero-section-garage {
+  padding: 50px 10px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  /* background-image: url(../src/assets/images/bg.jpg); */
+  background-size: cover;
+  height: calc(100vh - 10rem);
+  color: white;
+  font-size: 20px;
+  background-color: #101720;
+}
+
+.hero-section-about .h2-about {
+  color: #adcefc;
+  font-size: 40px;
+}
+
 /* login */
 /* login section   */
 
