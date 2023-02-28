@@ -48,6 +48,28 @@ li {
   text-transform: uppercase;
   text-align: center;
 }
+/* hero section about */
+.hero-section-about {
+  padding: 50px 10px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  /* background-image: url(../src/assets/images/bg.jpg); */
+  background-size: cover;
+  height: calc(100vh - 10rem);
+  color: white;
+  font-size: 20px;
+  background-color: #101720;
+}
+
+.hero-section-about .h2-about {
+  color: #adcefc;
+  font-size: 40px;
+}
+/* End About */
+
+
 
 /* login */
 /* login section   */
