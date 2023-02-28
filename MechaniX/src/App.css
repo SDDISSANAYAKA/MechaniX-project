@@ -69,7 +69,43 @@ li {
 }
 /* End About */
 
+/* work */
+/* hero section work */
+.hero-section-work {
+  padding: 40px 10px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  /* background-image: url(../src/assets/images/bg.jpg); */
+  background-size: cover;
+  height: calc(100vh - 10rem);
+  background-color: #101720;
+}
 
+.span-work{
+  font-size: 18px;
+  color: #3551f1;
+}
+
+.hero-section-work p {
+  color: white;
+  font-size: 20px;
+}
+
+.hero-section-work .h1-work {
+  color: #adcefc;
+  font-size: 40px;
+
+}
+
+.hero-section-work .ul-work {
+  color: rgb(255, 255, 255);
+  list-style-type: circle;
+  font-size: 20px;
+  text-size-adjust: 5px;
+}
+/* work End */
 
 /* login */
 /* login section   */
