@@ -126,6 +126,57 @@ li {
   color: #adcefc;
   font-size: 40px;
 }
+/* garage End */
+
+/* Form contact */
+.div-contact{
+  padding: 25px 5px;
+  background-color: #101720;
+  background-size: cover;
+  height: calc(100vh - 10rem);
+}
+.h1-contact{
+  color: white;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+form {
+  display: block;
+  background-color: white;
+  box-shadow: 1px 1px 3px 2px;
+  margin: 40px auto;
+  max-width: 400px;
+  max-height: 500px;
+  padding: 20px;
+}
+form input, textarea{
+  display: flex;
+  flex-direction: column;
+  /* margin: 10px auto; */
+  /* padding: 10px; */
+  font-family: "Poppins";
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+}
+form button{
+  height: 30px;
+  width: 100px;
+  align-items: center;
+  border: none;
+  background-color: rgb(57, 166, 199);
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+form button:hover{
+  cursor: pointer;
+  background: #183153;
+  box-shadow: 0 0 5px #3551f1;
+}
+
+/* Contact End */
 
 /* login */
 /* login section   */
