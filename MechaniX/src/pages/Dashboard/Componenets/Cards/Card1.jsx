@@ -10,7 +10,7 @@ function Card1(props) {
 
 
   return (
-    <div id="small2">
+    <div id="small2" >
       <h1>Welcome User</h1>
       <Card bg="primary" text="white" style={{ width: "50rem" }}>
         <Card.Header>{props.name}</Card.Header>

@@ -5,6 +5,7 @@ import RightPane from './Componenets/RightPane/RightPane'
 import './dashboard.css' 
 import Home from './Pages/Home/Home'
 
+
 function Dashboard() {
   return (
     <div className='dashboard'> <Home/> </div> 

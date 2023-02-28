@@ -2,6 +2,7 @@ const express = require('express')
 var cors = require('cors')
 const User = require('./modules/user')
 const Vehicle = require('./modules/vehicle')
+const Form = require('./modules/Form')
 var bodyParser = require('body-parser')
 const app = express()
 const port = 5001
@@ -46,8 +47,6 @@ app.post('/register', (req, res) => {
   Vehicle.create({ "VehicleNo":data.VehicleNo, "Vehicletype":data.Vehicletype, "VehicleModel":data.VehicleModel, "VehicleMade":data.VehicleMade, "Madeyear":data.Madeyear, "fueltype":data.fueltype })
 
 
-
-
   console.log(data);
   res.send("user registered")
 
@@ -58,4 +57,14 @@ app.post('/register', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
+})
+
+
+app.post('/form',(req,res) =>{
+  let data = req.body;
+  console.log();
+  Form.create({"VehicleNo":data.VehicleNo , "name":data.name, "phone":data.phone, "ProblemStatement":data.ProblemStatement, "Date":data.Date})
+
+  console.log(data);
+  res.send("form submitted")
 })

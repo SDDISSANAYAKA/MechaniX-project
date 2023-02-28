@@ -63,7 +63,7 @@ export const Login = (props) => {
     <section className="hero-section">
       <div className="login-container">
       <div className="login-title"> Login </div>
-        <form action="" onSubmit={ login } className="logform" method="POST">
+        <form action="" onSubmit={ login } className="log-form" method="POST">
           <div className="inputbox">
             <label htmlFor="veh_regNo" className="label-log">
               Vehicle Number:
